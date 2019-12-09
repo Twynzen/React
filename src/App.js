@@ -1,21 +1,15 @@
+import Saludar from "./components/Saludar";
 import React from "react";
 
 function App() {
-  const holapues = () => {
-    return "hola mundo pues";
-  };
+    return (
+      <div className= "App">
+      <h1>Primer compenente</h1>
+      //así se llama un componente
+      <Saludar />
+      </div>
+    );
 
-  const numero = () => {
-    console.log(1);
-  };
-
-  return (
-    <div className="App">
-      <h1>Probando</h1>
-      {holapues()}
-      <button onClick={numero}>CLICK</button>
-    </div>
-  );
 }
 
 export default App;
