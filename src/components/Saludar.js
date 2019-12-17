@@ -1,8 +1,13 @@
 import React from "react";
 
 export default function Saludar(props) {
-  const {nombre, apellido, edad} = props;
+  const { nombre, enviarSaludo } = props;
   console.log(props);
-  return `Hola ${nombre} tu apellido es ${apellido} ¿correcto?`;
+  return (
+    <div>
+      <p>hola {nombre}.</p>
+      <button onClick={() => enviarSaludo(nombre)}>Enviar saludo</button>
+    </div>
+  );
 }
 //export default Saludar;
